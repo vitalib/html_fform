@@ -2,178 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .input-from {
-        position: relalive;
-        border: 1px solid red;
-        max-width: 800px;
-        padding: 90px 70px;
-        box-sizing: border-box;
-        color: #333;
-        border: 1px solid #dadada;
-        text-align: right;
-        margin: 100px auto;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      }
-      .input-field {
-        height: 60px;
-        margin-bottom: 30px;
-        width: 319px;
-        box-sizing: border-box;
-        font-size: 20px;
-        padding: 18px;
-        border: 1px solid #dadada;
-        border-radius: 2px;
-      }
-
-      .input-field:focus {
-        border: 1px solid #ff3f5d;
-        border-radius: 2px;
-      }
-      .input-1 {
-        float: left;
-        margin-right: 20px;
-      }
-      .input-2 {
-        float: left;
-      }
-
-      h1 {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 40px;
-        font-family: Futura, Helvetica;
-        font-size: 30px;
-        font-weight: normal;
-      }
-      textarea {
-        width: 100%;
-        height: 200px;
-        padding: 15px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        font-size: 16px;
-        border: 1px solid #dadada;
-        border-radius: 2px;
-      }
-
-      textarea:focus {
-        border: 1px solid #ff3f5d;
-        border-radius: 2px;
-      }
-
-      .form-wrapper::before {
-        position: absolute;
-        top: -55px;
-        left:50%;
-        margin-left: -50px;
-        width: 100px;
-        height: 100px;
-        border: 1px solid #dadada;
-        background-color: #fff;
-        background-image: url(letter.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        content: "";
-      }
-      .button {
-        margin-right: 0;
-        margin-left: auto;
-        padding: 10px 30px;
-        background: #ff3f5d;
-        float: right;
-        height: 50px;
-        box-sizing: border-box;
-        border: none;
-        color: #fff;
-        font-size: 18px;
-      }
-      .button:hover, button:active {
-          background-color: #333;
-      }
-
-      .relative_cont {
-      min-height: 200px;
-      min-width: 200px;
-      background-color: green;
-      position: relative;
-    }
-
-    .form-wrapper {
-      position: relative;
-    }
-
-    .button-wrapper::after {
-      display: table;
-      content: "";
-      clear:both;
-    }
-
-    .container {
-      min-height: 600px;
-      padding:300px;
-      background-color: #dddddd;
-    }
-
-    </style>
-
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
   <body>
     <div class="container">
-      <div class="form-wrapper">
-        <form class="input-from" action="index.html" method="post">
-          <h1>Drop Us A Message</h1>
-          <div class="input-fields">
-            <input class="input-field input-1" type="text" placeholder="Name">
-            <input class="input-field input-2" type="text" placeholder="Email Addres">
-          </div>
-          <textarea name="name">Write Us A Message</textarea>
-          <div class="button-wrapper">
-            <input class="button" type="submit" name="" value="Send">
-          </div>
-        </form>
-      </div>
+      <form class="input-form" action="index.html" method="post">
+        <h1 class="title">Drop Us A Message</h1>
+        <div class="input-fields">
+          <input class="input-field input-1" type="text" placeholder="Name">
+          <input class="input-field input-2" type="text" placeholder="Email Addres">
+        </div>
+        <textarea class="input-textarea">Write Us A Message</textarea>
+        <div class="send-button-wrapper">
+          <input class="send-button" type="submit" value="Send">
+        </div>
+      </form>
     </div>
-  </div>
+  </body>
 </html>
-
-<!-- Про PSD: Сделать "на глаз", да и в psd линейка есть
-без бутстрапа
-таблицы нельзя
-нормалайз можно, но не обязательно
-краснота, да, - это псевдокласс :focus
-про вертикаль: если сделаете центрирование по вертикали,
-вам + к скилам, если нет: отступ сверху 50px
-
-ширина формы - 800px
-поля формы: top,bottom: 90px
-left, right: 70px
-отступы между элементами формы  по вертикали 30px,
-по горизонтали 20px, так же у них есть скругление углов: 2px
-диаметр круга наверху - 100px
-При наведении на кнопку ее цвет меняется на #333
-высота textarea: 200px; Поля у него 15px (edited)
-
-меня устроит любой шрифт без засечек на ваш вкус
-цвет текста #333
-размер текста:
-заголовок 30px
-в интутах   20px
-textarea  16px
-кнопка 18px
-
-высота инпута 60px
-высота кнопки  50px
-
-поля в инпутах 18px
-
-focus и active одинаковые - меняется цвет на #333
-тень оставлю на ваше усмотрение
-скругления одинаковые везде
-svg нет -->
