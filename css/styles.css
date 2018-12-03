@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+      background-color: #dddddd;
+}
+
 .message-form-input-field {
   border: 1px solid #dadada;
   border-radius: 2px;
@@ -12,7 +16,7 @@
   height: 60px;
   margin-bottom: 30px;
   padding: 18px;
-  width: 318px;
+  width: 319px;
 }
 
 .message-form-input-field-first {
@@ -99,7 +103,7 @@
 }
 
 .message-form-wrapper {
-  background-color: #dddddd;
-  min-height: 600px;
-  padding: 150px;
+  margin: auto auto;
+  width: 800px;
+  box-sizing: border-box;
 }
