@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+      background-color: #dddddd;
+}
+
+.message-form-input-field {
+  border: 1px solid #dadada;
+  border-radius: 2px;
+  box-sizing: border-box;
+  float: left;
+  font-size: 20px;
+  height: 60px;
+  margin-bottom: 30px;
+  padding: 18px;
+  width: 319px;
+}
+
+.message-form-input-field-first {
+  margin-right: 20px;
+}
+
+.message-form-input-field:focus,
+.message-form-input-textarea:focus {
+  border: 1px solid #ff3f5d;
+  border-radius: 2px;
+}
+
+.message-form-input-textarea {
+  border: 1px solid #dadada;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+.message-input-form  {
+  background-color: #fff;
+  border:1px solid  #dadada;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  color: #333;
+  margin: 100px auto;
+  max-width: 800px;
+  padding: 90px 70px;
+  position: relative;
+}
+
+.message-input-form::before {
+  background-color: #fff;
+  background-image: url(../images/letter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  content: "";
+  height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  top: -55px;
+  width: 100px;
+}
+
+.message-form-send-button {
+  background: #ff3f5d;
+  border: none;
+  box-sizing: border-box;
+  color: #fff;
+  float: right;
+  font-size: 18px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 10px 30px;
+}
+
+.message-form-send-button-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.message-form-send-button:hover,
+.message-form-send-button:active {
+  background-color: #333;
+}
+
+.message-form-title {
+  font-family: Futura, Helvetica;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.message-form-wrapper {
+  margin: auto auto;
+  width: 800px;
+  box-sizing: border-box;
+}
